@@ -9,14 +9,14 @@ import CheckPoint from "./CheckPoint";
 import Task from "./Task";
 import VerticalLine from "./VerticalLine";
 
-const Milestone = ({ data }) => {
+const Milestone = ({ id, isComplete }) => {
   return (
     <div className="h-24 flex items-center gap-4">
       <div className="h-full relative flex flex-col items-center">
         <VerticalLine />
-        <CheckPoint />
+        <CheckPoint isComplete={isComplete} />
       </div>
-      <Task id={data.id} />
+      <Task id={id} isComplete={isComplete} />
     </div>
   );
 };

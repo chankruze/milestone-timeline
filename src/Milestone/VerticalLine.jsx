@@ -6,7 +6,7 @@ Copyright (c) geekofia 2022 and beyond
 */
 
 const VerticalLine = () => {
-  return <div className="flex-1 w-[2px] bg-gray-400"></div>;
+  return <div className="flex-1 w-[2px] bg-gray-500"></div>;
 };
 
 export default VerticalLine;
